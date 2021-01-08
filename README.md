@@ -33,7 +33,7 @@ g++ main.cpp -lm -Wall
 # see also:
 * [prm](https://github.com/raboehm/prm) - Find polynomial roots with multiplicities using mpmath by Bob Boehm
 
-# contributors
+# credits
 * basic stuff is the (modified) universal set of Newton starting points due to Sutherland
 * [marcm200](https://github.com/marcm200) ( most of the code) 
 
