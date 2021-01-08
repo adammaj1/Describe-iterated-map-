@@ -1,0 +1,13 @@
+r3, 1, 0
+r2, 0, 0
+r1, 0, 0
+r0,-0.040000000000000036, -0.78
+.
+// each line = 3 numbers describing coefficient of N-th degree monomial with optional r or R prefix 
+// rN,x,y: coefficient of N degree monomial ( =  term z^N) is the complex number = (x+i*y)  so monomial = (x+y*i)* Z^N
+// N,a,b: complex number = (a+b*i)*2^-25 at N-th coefficient so monomial = ((a+b*i)*2^-25)*z^N
+// . ( comma ) denotes end of input, the rest is not read = the comment
+// see loadPolynom function
+// https://commons.wikimedia.org/wiki/File:Cubic_Julia_set_C_%3D-0.040000000000000036-0.78*I_with_internal_level_curves.png
+//  ./a.out ./cubic_p2_Bagula.txt > ./cubic_p2_Bagula_out.txt
+

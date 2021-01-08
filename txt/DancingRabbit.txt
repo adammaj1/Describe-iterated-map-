@@ -1,0 +1,15 @@
+r2,1,0
+r0,-1.12,0.222
+.
+// each line = 3 numbers describing coefficient of N-th degree monomial with optional r or R prefix 
+// rN,x,y: coefficient of N degree monomial ( =  term z^N) is the complex number = (x+i*y)  so monomial = (x+y*i)* Z^N
+// N,a,b: complex number = (a+b*i)*2^-25 at N-th coefficient so monomial = ((a+b*i)*2^-25)*z^N
+// . ( comma ) denotes end of input, the rest is not read = the comment
+// see loadPolynom function
+// https://commons.wikimedia.org/wiki/File:Julia_set_of_the_quadratic_polynomial_f(z)_%3D_z%5E2_-_1.12_%2B_0.222i.png
+// This image shows the Julia set for a certain parameter in the quadratic family. It was created in response to a request by Professor Brandon Taylor (Ruskin School of Fine Art, Oxford and University of Southampton) 
+// for an image that would illustrate self-similarity of Julia sets.
+// The parameter c = -1.12 + 0.222i was chosen in the "dancing rabbits" component; i.e., the period 6 hyperbolic component bifurcating from the period 2 component of the Mandelbrot set. This choice was to create a distinctive subset of the Julia set that is clearly repeated at  
+// different scales. In addition, the choice was made to choose the multiplier to be non-real and with modulus close to 1, to create the distinctive "spiralling" structure near the repelling period two cycle, which again can be seen repeated throughout the Julia set.
+// The image was drawn using a general-purpose heuristic that estimates the distance to the Julia set using the size of the derivative and the distance to the beta-fixed point.
+//

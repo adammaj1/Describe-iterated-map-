@@ -1,0 +1,11 @@
+r2,1,0
+0,-7798334, 24082513
+.
+// each line = 3 numbers describing coefficient of N-th degree monomial with optional r or R prefix 
+// rN,x,y: coefficient of N degree monomial ( =  term z^N) is the complex number = (x+i*y)  so monomial = (x+y*i)* Z^N
+// N,a,b: complex number = (a+b*i)*2^-25 at N-th coefficient so monomial = ((a+b*i)*2^-25)*z^N
+// . ( comma ) denotes end of input, the rest is not read = the comment
+// see loadPolynom function
+// https://fractalforums.org/index.php?action=dlattach;topic=2725.0;attach=11193
+// _level19_testsubject_2.gif
+

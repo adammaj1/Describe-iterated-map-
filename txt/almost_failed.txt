@@ -1,0 +1,11 @@
+r3,1,0
+1,-17343094,-31007487
+0,-5947392,-3850240
+.
+// each line = 3 numbers describing coefficient of N-th degree monomial with optional r or R prefix 
+// rN,x,y: coefficient of N degree monomial ( =  term z^N) is the complex number = (x+i*y)  so monomial = (x+y*i)* Z^N
+// N,a,b: complex number = (a+b*i)*2^-25 at N-th coefficient so monomial = ((a+b*i)*2^-25)*z^N
+// . ( comma ) denotes end of input, the rest is not read = the comment
+// see loadPolynom function
+// Cubic Julia set z^3+A*z+c with two cycles of length 3 ( gray) and 105 ( black). c=(-5947392-3850240*i) * 2^-25 A=(-17343094-31007487*i) * 2^-25. Location by Marc Meidlinger: "Almost failed"
+

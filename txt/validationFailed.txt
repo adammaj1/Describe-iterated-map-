@@ -1,0 +1,15 @@
+r5, 2.25, 0
+r4,1.5, 0
+r3, -3.75,0
+r2, -3, 0
+r1, 1, 0
+r0, 1, 0
+.
+// each line = 3 numbers describing coefficient of N-th degree monomial with optional r or R prefix 
+// rN,x,y: coefficient of N degree monomial ( =  term z^N) is the complex number = (x+i*y)  so monomial = (x+y*i)* Z^N
+// N,a,b: complex number = (a+b*i)*2^-25 at N-th coefficient so monomial = ((a+b*i)*2^-25)*z^N
+// . ( comma ) denotes end of input, the rest is not read = the comment
+// see loadPolynom function
+// f(z)=1+z−3z2−3.75z3+1.5z4+2.25z5
+//  https://fractalforums.org/fractal-mathematics-and-new-theories/28/julia-sets-true-shape-and-escape-time/2725/new;topicseen#new
+

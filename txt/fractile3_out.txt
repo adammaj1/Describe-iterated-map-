@@ -1,0 +1,11 @@
+coefficients read from input file fractile3.txt
+	degree 2 coefficient = ( 1.000000 +0.000000*i) 
+	degree 0 coefficient = ( -0.060000 +0.680000*i) 
+
+Input polynomial p(z)=(1+0i)*z^2+(-0.05999999999999999778+0.68000000000000004885i)
+
+1 critical points found
+
+	cp#0: 0,0 . It's critical orbit is bounded and enters cycle #0 length=3 and it's stability = |multiplier|=0.96373 =attractive 
+cycle = {
+-0.01764865786150452559,0.68750090511255657066 ; -0.53234601940627213068,0.65573306349238769108 ; -0.20659356617940866085,-0.018153772286505720501 ; }

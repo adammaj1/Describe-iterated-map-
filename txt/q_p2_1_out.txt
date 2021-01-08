@@ -1,0 +1,12 @@
+coefficients read from input file q_p2_1.txt
+	degree 2 coefficient = ( +1.0000000000000000 +0.0000000000000000*i) 
+	degree 0 coefficient = ( -0.7570000000000000 +0.0270000000000000*i) 
+
+Input polynomial p(z)=(1+0i)*z^2+(-0.75700000000000000622+0.026999999999999999695i)
+
+1 critical points found
+
+	cp#0: 0,0 . It's critical orbit is bounded and enters cycle #0 length=2 and it's stability = |multiplier|=0.97798 =attractive 
+	internal angle = 0.017611643738638538964
+cycle = {
+-0.36791546009853592913,-0.10220726823950043727 ; -0.63208453990146384882,0.10220726823950056217 ; }

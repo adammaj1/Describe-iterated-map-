@@ -1,0 +1,9 @@
+coefficients read from input file p3near.txt
+	degree 2 coefficient = ( 1.000000 +0.000000*i) 
+	degree 0 coefficient = ( -1.749512 +0.000000*i) 
+
+Input polynomial p(z)=(1+0i)*z^2+(-1.749511999999999956+0i)
+
+1 critical points found
+
+	cp#0: 0,0 . It's critical orbit is bounded is not (yet) periodic

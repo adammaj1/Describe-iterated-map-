@@ -1,0 +1,12 @@
+coefficients read from input file q_p2_2.txt
+	degree 2 coefficient = ( +1.0000000000000000 +0.0000000000000000*i) 
+	degree 0 coefficient = ( -0.7520000000000000 +0.0100000000000000*i) 
+
+Input polynomial p(z)=(1+0i)*z^2+(-0.75200000000000000178+0.010000000000000000208i)
+
+1 critical points found
+
+	cp#0: 0,0 . It's critical orbit is bounded and enters cycle #0 length=2 and it's stability = |multiplier|=0.99281 =parabolic 
+	internal angle = 0.0064140633028488902925
+cycle = {
+-0.4219037804142037329,-0.064023585603998289795 ; -0.57809621958579593404,0.064023585603998539595 ; }

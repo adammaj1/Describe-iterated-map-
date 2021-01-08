@@ -1,0 +1,23 @@
+coefficients read from input file validationFailed.txt
+	degree 5 coefficient = ( +2.2500000000000000 +0.0000000000000000*i) 
+	degree 4 coefficient = ( +1.5000000000000000 +0.0000000000000000*i) 
+	degree 3 coefficient = ( -3.7500000000000000 +0.0000000000000000*i) 
+	degree 2 coefficient = ( -3.0000000000000000 +0.0000000000000000*i) 
+	degree 1 coefficient = ( +1.0000000000000000 +0.0000000000000000*i) 
+	degree 0 coefficient = ( +1.0000000000000000 +0.0000000000000000*i) 
+
+Input polynomial p(z)=(2.25+0i)*z^5+(1.5+0i)*z^4+(-3.75+0i)*z^3+(-3+0i)*z^2+(1+0i)*z^1+(1+0i)
+
+4 critical points found
+
+	cp#0: -0.81886248779132231324,-0.083366172059259224802 . It's critical orbit is bounded and enters cycle #0 length=3 and it's stability = |multiplier|=0.70431 =attractive 
+cycle = {
+0.051046483840772594043,-9.8813129168249308835e-324 ; 1.042741415337827604,-9.8813129168249308835e-324 ; -0.92377040934520726623,-2.9643938750474792651e-323 ; }
+
+	cp#1: 0.1354031363439483493,0 . It's critical orbit is bounded  and enters cycle #0
+
+	cp#2: -0.81886248779132408959,0.083366172059257226401 . It's critical orbit is bounded  and enters cycle #0
+
+	cp#3: 0.96898850590536300675,-2.1898778728935287718e-27 . It's critical orbit is bounded and enters cycle #1 length=3 and it's stability = |multiplier|=0.99976 =attractive 
+cycle = {
+-1.0000132826277488007,-1.4242477576956251569e-48 ; -1.3283554026521926517e-05,-1.4244464037113862021e-48 ; 0.99998671591662380287,-1.4245599311482756001e-48 ; }

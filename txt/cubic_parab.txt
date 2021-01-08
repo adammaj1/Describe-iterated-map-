@@ -1,0 +1,13 @@
+r3,-0.5,0
+r2,0.5,0
+r1,1,0
+.
+// each line = 3 numbers describing coefficient of N-th degree monomial with optional r or R prefix 
+// rN,x,y: coefficient of N degree monomial ( =  term z^N) is the complex number = (x+i*y)  so monomial = (x+y*i)* Z^N
+// N,a,b: complex number = (a+b*i)*2^-25 at N-th coefficient so monomial = ((a+b*i)*2^-25)*z^N
+// . ( comma ) denotes end of input, the rest is not read = the comment
+// see loadPolynom function
+//"Cubic parabolic set with interior"
+// https://fractalforums.org/fractal-mathematics-and-new-theories/28/parabolic-julia-sets/3091/45
+// The polynomial [latex=inline]f(z)=z+\frac{1}{2}z^2 -\frac{1}{2}z^3[/latex] has been constructed to have a parabolic fix point at the origin (f`=1) and an attracting cycle at x=1. For this set, the TSA (after some modifications) can detect interior (see image below, immediate basin of the parabolic fix point in yellow).
+

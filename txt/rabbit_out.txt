@@ -1,0 +1,11 @@
+coefficients read from input file rabbit.txt
+	degree 2 coefficient = ( 1.0000000000000000 +0.0000000000000000*i) 
+	degree 0 coefficient = ( -0.1225611668766540 +0.7448617666197440*i) 
+
+Input polynomial p(z)=(1+0i)*z^2+(-0.12256116687665399856+0.74486176661974401458i)
+
+1 critical points found
+
+	cp#0: 0,0 . It's critical orbit is bounded and enters cycle #0 length=3 and it's stability = |multiplier|=4.3811e-15 =attractive 
+cycle = {
+-0.12256116687665399856,0.74486176661974401458 ; -0.66235897862237291811,0.56227951206230053494 ; 3.0531133177191804862e-16,7.771561172376095783e-16 ; }

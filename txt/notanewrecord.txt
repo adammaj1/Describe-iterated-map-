@@ -1,0 +1,13 @@
+r6,1,0
+1,-33725751,810162
+0,-3096576,+8798208
+.
+// each line = 3 numbers describing coefficient of N-th degree monomial with optional r or R prefix 
+// rN,x,y: coefficient of N degree monomial ( =  term z^N) is the complex number = (x+i*y)  so monomial = (x+y*i)* Z^N
+// N,a,b: complex number = (a+b*i)*2^-25 at N-th coefficient so monomial = ((a+b*i)*2^-25)*z^N
+// . ( comma ) denotes end of input, the rest is not read = the comment
+// see loadPolynom function
+// f(z)=z^6+A*z+c
+// A=(-33725751,810162*i)*2^-25
+// c=(-3096576+8798208*i)*2^-25
+

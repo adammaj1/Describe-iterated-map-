@@ -1,0 +1,30 @@
+r5, 1.77, 0.058
+r4, 0.5, 0.0
+r3, -3.29, -0.116
+r2, -1.0, 0.0
+r1, 1.02, 0.05
+r0, 0.0, 0.0
+.
+// each line = 3 numbers describing coefficient of N-th degree monomial with optional r or R prefix 
+// rN,x,y: coefficient of N degree monomial ( =  term z^N) is the complex number = (x+i*y)  so monomial = (x+y*i)* Z^N
+// N,a,b: complex number = (a+b*i)*2^-25 at N-th coefficient so monomial = ((a+b*i)*2^-25)*z^N
+// . ( comma ) denotes end of input, the rest is not read = the comment
+// see loadPolynom function
+//
+//(%i13) coeff(f,z,5);
+//(%o13) C+3/4 = 0.058*%i+1.77
+//(%i14) coeff(f,z,4);
+//(%o14) 1/2
+//
+//(%i15) coeff(f,z,3);
+//(%o15) (-2*C)-5/4 = (-0.116*%i)-3.29
+//
+//(%i16) coeff(f,z,2);
+//(%o16) -1
+//
+//(%i17) coeff(f,z,1);
+//(%o17) C =  1.02 + 0.05*I;
+//
+//
+//(%i18) coeff(f,z,0);
+//(%o18) 0

@@ -1,0 +1,19 @@
+r8, 1,0
+r1, -0.02319588789930593364, -1.00344116635657720771
+r0, -0.0765380859375, 0.4205322265625
+.
+// each line = 3 numbers describing coefficient of N-th degree monomial with optional r or R prefix 
+// rN,x,y: coefficient of N degree monomial ( =  term z^N) is the complex number = (x+i*y)  so monomial = (x+y*i)* Z^N
+// N,a,b: complex number = (a+b*i)*2^-25 at N-th coefficient so monomial = ((a+b*i)*2^-25)*z^N
+// . ( comma ) denotes end of input, the rest is not read = the comment
+// see loadPolynom function
+//Square spiral"  f(z)=z^8+A*z+c
+// c=-0.0765380859375 + i*0.4205322265625
+// A=-0.02319588789930593364 - i*1.00344116635657720771
+// The shape of the beginning spirals in the center of the image is quite interesting. They seem to first follow a more or less square-pattern like in an old TV, before they start circling.
+// When I saw this image, I was wondering: The small objects the spiral is composed of: How many iterations do they need to reach the 72-cycle ? (Immediate basin in red, a bit overshooting as I merely colored it by Paint's flood fill).
+// Each color (except red) represents an interval of 100 iterations to reach red, starting from 1..99 as gray, 100-199 as turquois (purple, yellow, green, brown, dark cyan, white)(left image) or 10 (right image).
+// Interestingly, in the left image, each color occurs 4 times as a sequence of several consecutive objects. If using 10-intervals, each color occurs in blocks of 2 or 3.
+// One could now play a number's game: 4 streaks - and 4 main components of the 72 cycle. Blocks of length 2 and 3: prime factors of the 72-cycle, but I do not know whether these are "real things" 
+// or just lucky results using the (arbitrary human simple) numbers 10 and 100 or the /low zoom (actually none) I computed.
+// https://fractalforums.org/image-threads/25/julia-and-mandelbrot-sets-w-or-wo-lyapunov-sequences/2696/new;topicseen#new

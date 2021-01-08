@@ -1,0 +1,12 @@
+coefficients read from input file spiral1.txt
+	degree 2 coefficient = ( +1.0000000000000000 +0.0000000000000000*i) 
+	degree 0 coefficient = ( -0.7494135891365700 +0.0153128265076890*i) 
+
+Input polynomial p(z)=(1+0i)*z^2+(-0.74941358913656996865+0.015312826507689000083i)
+
+1 critical points found
+
+	cp#0: 0,0 . It's critical orbit is bounded and enters cycle #0 length=1 and it's stability = |multiplier|=0.99959 =parabolic 
+	internal angle = 0.49756114816558294489
+cycle = {
+-0.49973608562614335593,0.0076584343005330103582 ; }

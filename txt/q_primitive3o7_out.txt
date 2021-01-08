@@ -1,0 +1,9 @@
+coefficients read from input file q_primitive3o7.txt
+	degree 2 coefficient = ( +1.0000000000000000 +0.0000000000000000*i) 
+	degree 0 coefficient = ( -1.7467673532281520 +0.0007190579004290*i) 
+
+Input polynomial p(z)=(1+0i)*z^2+(-1.7467673532281520199+0.00071905790042899996733i)
+
+1 critical points found
+
+	cp#0: 0,0 . It's critical orbit is escaping
