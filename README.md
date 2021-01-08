@@ -25,8 +25,14 @@ g++ main.cpp -lm -Wall
 ./a.out rabbit.txt > rabbit_out.txt
 ```
 # examples
-* see files in [txt directory](./txt)
+* see files in [txt directory](./txt): 
+  * input files: *.txt
+  * output files : *_out.txt
 * [cubic Julia set - location by  Roger Lee Bagula](https://commons.wikimedia.org/wiki/File:Cubic_Julia_set_C_%3D-0.040000000000000036-0.78*I_with_internal_level_curves.png)
+
+# see also:
+* [prm](https://github.com/raboehm/prm) - Find polynomial roots with multiplicities using mpmath by Bob Boehm
+
 
 
 # git
