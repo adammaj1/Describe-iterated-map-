@@ -41,7 +41,7 @@ g++ main.cpp -lm -Wall
 
 
 
-#License
+# License
 MIT License
 
 Copyright (c) 2020 
