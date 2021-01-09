@@ -4,6 +4,8 @@ coefficients read from input file spiral1.txt
 
 Input polynomial p(z)=(1+0i)*z^2+(-0.74941358913656996865+0.015312826507689000083i)
 
+derivative dp/dz = (2+0i)*z^1
+
 1 critical points found
 
 	cp#0: 0,0 . It's critical orbit is bounded and enters cycle #0 length=1 and it's stability = |multiplier|=0.99959 =parabolic 
