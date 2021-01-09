@@ -5,7 +5,7 @@ determine numerically the cycles of a polynomial Julia set
 # algorithm
 
 ## find critical points
-first find [the critical points](https://en.wikipedia.org/wiki/Critical_point_(mathematics)) via [classical Newton methid](https://en.wikibooks.org/wiki/Fractals/Mathematics/Newton_method) using a set of [equidistant starting points](https://gitlab.com/adammajewski/periodic-points-of-complex-quadratic-polynomial-using-newton-method) (  at a square the size 3 times [the Lagrangian estimate for the location of the roots of](https://en.wikipedia.org/wiki/Geometrical_properties_of_polynomial_roots#Lagrange's_and_Cauchy's_bounds) f'(z) (usually a total of 1024 points). 
+first find [the critical points](https://en.wikipedia.org/wiki/Critical_point_(mathematics)) via [classical Newton method](https://en.wikibooks.org/wiki/Fractals/Mathematics/Newton_method) using a set of [equidistant starting points](https://gitlab.com/adammajewski/periodic-points-of-complex-quadratic-polynomial-using-newton-method) (  at a square the size 3 times [the Lagrangian estimate for the location of the roots of](https://en.wikipedia.org/wiki/Geometrical_properties_of_polynomial_roots#Lagrange's_and_Cauchy's_bounds) f'(z) (usually a total of 1024 points). 
 
 ## compute the critical orbits
 Then I construct the orbit of those using double precision (or sometimes float128), but without rounding control, for usually 25 000 iterations (escaping is tested using an escape radius either manually set or computed via the Douady estimate). 
