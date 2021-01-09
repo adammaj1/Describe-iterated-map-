@@ -29,8 +29,10 @@ g++ main.cpp -lm -Wall
   * input files: *.txt
   * output files : *_out.txt
 * [cubic Julia set - location by  Roger Lee Bagula](https://commons.wikimedia.org/wiki/File:Cubic_Julia_set_C_%3D-0.040000000000000036-0.78*I_with_internal_level_curves.png)
+* [Critical orbit f(z) = z*z+-0.749413589136570+0.015312826507689*i](https://commons.wikimedia.org/wiki/File:Critical_orbit_f(z)_%3D_z*z%2Bc_and_c%3D-0.749413589136570%2B0.015312826507689*i.png)
 
 # see also:
+* [program describe ](https://en.wikibooks.org/wiki/Fractals/mandelbrot-numerics#m-describe) from mandelbrot-numerics  library by Claude Heiland-Allen
 * [prm](https://github.com/raboehm/prm) - Find polynomial roots with multiplicities using mpmath by Bob Boehm
 
 # credits
