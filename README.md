@@ -36,7 +36,8 @@ g++ main.cpp -lm -Wall
 * [prm](https://github.com/raboehm/prm) - Find polynomial roots with multiplicities using mpmath by Bob Boehm
 
 # credits
-* basic stuff is the (modified) universal set of Newton starting points due to [Sutherland](http://pi.math.cornell.edu/~hubbard/NewtonInventiones.pdf)
+* basic stuff is the (modified) universal set of Newton starting points due to [Sutherland]
+The initial points selected for the Newton iterations are based on a modification/simplification for practical purposes of the universal set of starting points by [Sutherland](http://pi.math.cornell.edu/~hubbard/NewtonInventiones.pdf). Sutherland et al use a set of circles that guarantee at least one converging starting point for every basin of attraction, the square used here (out of practical considerations) has no such guarantee. 
 * [marcm200](https://github.com/marcm200) ( most of the code) 
 
 
