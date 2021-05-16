@@ -1,6 +1,6 @@
 <p align="center">
-  <a href="https://github.com/adammaj1/Describe-iterated-map-"><img src="https://img.shields.io/tokei/lines/github/Describe-iterated-map-.git" alt="Repository Size"></a>
-  <a href="https://github.com/adammaj1/Describe-iterated-map-/releases"><img src="https://img.shields.io/github/downloads/Describe-iterated-map-.git/total?style=flat" alt="Github Release"></a>
+  <a href="https://github.com/adammaj1/Describe-iterated-map-"><img src="https://img.shields.io/tokei/lines/github/Describe-iterated-map-" alt="Repository Size"></a>
+  <a href="https://github.com/adammaj1/Describe-iterated-map-/releases"><img src="https://img.shields.io/github/downloads/Describe-iterated-map-/total?style=flat" alt="Github Release"></a>
 </p>
 
 
