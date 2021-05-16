@@ -1,3 +1,6 @@
+
+
+
 # numerical periodicity detection
 
 determine numerically the cycles of a polynomial Julia set
@@ -80,3 +83,21 @@ git branch -M main
 git remote add origin git@github.com:adammaj1/Describe-iterated-map-.git
 git push -u origin main
 ```
+
+local repo : ~Dokumenty/periodic
+
+## shields
+
+Shields.io is a service for concise, consistent, and legible badges in SVG and raster format, which can easily be included in GitHub readmes or any other web page.  
+
+[github: badges/shields](https://github.com/badges/shields)
+
+```
+<p align="center">
+  <a href="https://github.com/rust-fractal/rust-fractal-core/blob/master/LICENSE"><img src="https://img.shields.io/github/license/rust-fractal/rust-fractal-core" alt="Repository License"></a>
+  <a href="https://github.com/rust-fractal/rust-fractal-core/"><img src="https://img.shields.io/tokei/lines/github/rust-fractal/rust-fractal-core" alt="Repository Size"></a>
+  <a href="https://github.com/rust-fractal/rust-fractal-core/releases"><img src="https://img.shields.io/github/downloads/rust-fractal/rust-fractal-core/total?style=flat" alt="Github Release"></a>
+</p>
+```
+
+

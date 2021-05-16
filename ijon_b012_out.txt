@@ -1,0 +1,13 @@
+coefficients read from input file ijon_b012.txt
+	degree 3 coefficient = ( +1.0000000000000000 +0.0000000000000000*i) 
+	degree 1 coefficient = ( +1.0049542069308059 +0.1008317508132964*i) 
+
+Input polynomial p(z)=(1+0i)*z^3+(1.0049542069308059489+0.10083175081329640022i)*z^1
+
+derivative dp/dz = (3+0i)*z^2+(1.0049542069308059489+0.10083175081329640022i)
+
+2 critical points found
+
+	cp#0: 0.028999405365150658642,-0.57950470330717274159 . It's critical orbit is escaping
+
+	cp#1: -0.028999405365150655173,0.57950470330717274159 . It's critical orbit is escaping

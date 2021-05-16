@@ -1,0 +1,7 @@
+r3,1,0
+r1,1.004954206930806,0.1008317508132964
+.
+// rN,x,y: complex number x+i*y as coefficient at degree term z^N
+// N,a,b: complex number (a+b*i)*2^-25 at N-th coefficient
+// f(z)=z^3+ c*z ; c= 0.1008317508132964 %i + 1.004954206930806
+
