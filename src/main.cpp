@@ -23,8 +23,9 @@
 
 
 One thing I forgot to mention. The code uses the format specifier %lld in printf and sscanf, that doesn't work on all compilers, some call it %LLd I guess or something similar. So you might need to change all those 64-bit references back to %i and int32_t (for the polynomials I usually compute, 64-bit is not necessary, but I started to use them some time ago). Or just use floating point numbers in the _infunction.txt file (so al lines starting with "r"). That should take care of the warnings and the incorrectly computed values in the output you posted.
-
+=======================
 As for the license: From my side, there isn't one. If you want to use the code, by all means do so, no reference needed as it is mostly basic stuff (the actual work was the (modified) universal set of Newton starting points, but that's due to Sutherland, so I suggest keeping that reference in the comments).
+============================
 
 
 https://stackoverflow.com/questions/13590735/printf-long-long-int-in-c-with-gcc
@@ -61,7 +62,25 @@ const int32_t MAXZYKLUSLEN=512; // max length of a cycle
 const int32_t MAXCP=1024; // max number of critical points
 
 
-// (There is no special reason to have two values in my code for orbit len, so you can combine them and maybe use maxit throughout. 
+/* (There is no special reason to have two values in my code for orbit len, so you can combine them and maybe use maxit throughout. 
+near parabolic ones need a longer iteration. I recommend you change the following two lines in the code:
+
+int32_t maxit=25000;
+
+to some other value - 50000 is working here.
+
+If you want to use a higher maxit than 2^16 you also need to change the memory allocation constant:
+
+const int32_t MAXFIXORBITLEN=(1 << 16); // max length of a total orbit to some higher value than maxit.
+
+
+ike this from a (much) slower computer to here and then I just left it that way).
+
+I normally do not go beyond 50000, because I usually also compute the
+image - and more than 50000 per pixel takes too long for those.
+
+
+*/
 const int32_t MAXFIXORBITLEN=50000; // (1 << 16); // max length of a total orbit = 2^16
 int32_t maxit=MAXFIXORBITLEN;
 
@@ -586,7 +605,7 @@ void AnalyseFunction(Polynom& function) {
 				if (l<0.99) printf("attractive \n");\
 				else {\
 					if (l>1.0001) printf("repelling \n");\
-						else printf("parabolic \n");\
+						else printf("attracting or parabolic \n");\
 					}\
 				printf("\tinternal angle = %.20lg\n", t);\
 				printf("cycle = {\n");\
@@ -747,7 +766,16 @@ int32_t main(int argc, char *argv[]) {
 	
 	
 	// read argument : input file 
-	if( argc != 2 ) { fprintf(stderr, "bad number of arguments ( should be one string = FileName)\n./a.out \"fileName\"\n./out \"rabbit.txt\" > rabit_out.txt\n"); return 1;} // check arguments
+	if( argc != 2 ) 
+	{ 
+		fprintf(stderr, "bad number of arguments ( should be one string = File Name)\n");
+		fprintf(stderr, "to print the result to stdout use: \n");
+		fprintf(stderr, "./a.out \"fileName\"  \n");
+		fprintf(stderr, "or to print the result to the file use: \n");
+		fprintf(stderr, "./a.out \"a.txt\" > a_out.txt  \n"); 
+		return 1;
+	} // check arguments
+	
 	FileName = argv[1]; // file name is an argument ot the program
 	
 	if (loadPolynom(function,FileName))
@@ -760,4 +788,7 @@ int32_t main(int argc, char *argv[]) {
 
 	return 0;
 }
+
+
+
 
