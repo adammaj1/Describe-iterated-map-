@@ -96,9 +96,33 @@ git remote add origin git@github.com:adammaj1/Describe-iterated-map-.git
 git push -u origin main
 ```
 
+Subdirectory: 
+
+```git
+mkdir txt
+git add *.txt
+git mv  *.txt ./txt
+git commit -m "move"
+git push -u origin main
+```
+to overwrite
+
+```git
+git mv -f 
+```
+
+to remove file from remote repo
+
+```git
+git rm --cached file1.txt
+git commit -m "remove"
+git push -u origin main
+```
+
+
 local repo : ~Dokumenty/periodic
 
-## shields
+# shields
 
 Shields.io is a service for concise, consistent, and legible badges in SVG and raster format, which can easily be included in GitHub readmes or any other web page.  
 
