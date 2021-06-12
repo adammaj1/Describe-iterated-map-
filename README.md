@@ -33,11 +33,74 @@ g++ main.cpp -lm -Wall
 ./a.out a.txt > a_out.txt
 ```
 
-or if one wants use all input files in the working directory use simply:  
+or if one wants use all input files in the working directory use simply [make](./src/Makefile) :  
 
-```
+```bash  
 make
 ```   
+
+Example result:
+
+
+
+```bash
+chmod +x m.sh
+./m.sh
+program compiled without errors  
+run the program for input txt file:
+	almost_failed_out.txt is output file = skipped 
+	almost_failed.txt = input file 	 almost_failed_out.txt = output file 
+	cubic_p2_Bagula_out.txt is output file = skipped 
+	cubic_p2_Bagula.txt = input file 	 cubic_p2_Bagula_out.txt = output file 
+	cubic_parab_out.txt is output file = skipped 
+	cubic_parab.txt = input file 	 cubic_parab_out.txt = output file 
+	DancingRabbit_out.txt is output file = skipped 
+	DancingRabbit.txt = input file 	 DancingRabbit_out.txt = output file 
+	dumbbell_out.txt is output file = skipped 
+	dumbbell.txt = input file 	 dumbbell_out.txt = output file 
+	fractile3_out.txt is output file = skipped 
+	fractile3.txt = input file 	 fractile3_out.txt = output file 
+	ijon_b012_out.txt is output file = skipped 
+	ijon_b012.txt = input file 	 ijon_b012_out.txt = output file 
+	kawahira_sc_c3_out.txt is output file = skipped 
+	kawahira_sc_c3.txt = input file 	 kawahira_sc_c3_out.txt = output file 
+	labirynth_out.txt is output file = skipped 
+	labirynth.txt = input file 	 labirynth_out.txt = output file 
+	milnor_fig11_out.txt is output file = skipped 
+	milnor_fig11.txt = input file 	 milnor_fig11_out.txt = output file 
+	notanewrecord_out.txt is output file = skipped 
+	notanewrecord.txt = input file 	 notanewrecord_out.txt = output file 
+	p3near_out.txt is output file = skipped 
+	p3near.txt = input file 	 p3near_out.txt = output file 
+	q_p2_1_out.txt is output file = skipped 
+	q_p2_1.txt = input file 	 q_p2_1_out.txt = output file 
+	q_p2_2_out.txt is output file = skipped 
+	q_p2_2.txt = input file 	 q_p2_2_out.txt = output file 
+	q_primitive3o7_out.txt is output file = skipped 
+	q_primitive3o7.txt = input file 	 q_primitive3o7_out.txt = output file 
+	quadratic_out.txt is output file = skipped 
+	quadratic_.txt = input file 	 quadratic__out.txt = output file 
+	rabbit_out.txt is output file = skipped 
+	rabbit.txt = input file 	 rabbit_out.txt = output file 
+	spiral1_out.txt is output file = skipped 
+	spiral1.txt = input file 	 spiral1_out.txt = output file 
+	spiral6_out.txt is output file = skipped 
+	spiral6.txt = input file 	 spiral6_out.txt = output file 
+	spiral_marc_10_out.txt is output file = skipped 
+	spiral_marc_10.txt = input file 	 spiral_marc_10_out.txt = output file 
+	spiral_marc_out.txt is output file = skipped 
+	spiral_marc.txt = input file 	 spiral_marc_out.txt = output file 
+	square_spiral_out.txt is output file = skipped 
+	square_spiral.txt = input file 	 square_spiral_out.txt = output file 
+	thomasson85center_out.txt is output file = skipped 
+	thomasson85center.txt = input file 	 thomasson85center_out.txt = output file 
+	thomasson85_out.txt is output file = skipped 
+	thomasson85.txt = input file 	 thomasson85_out.txt = output file 
+	validationFailed_out2.txt = input file 	 validationFailed_out2_out.txt = output file 
+	validationFailed_out.txt is output file = skipped 
+	validationFailed.txt = input file 	 validationFailed_out.txt = output file 
+end
+```
 
 # examples  
 * see files in [txt directory](./txt):   
