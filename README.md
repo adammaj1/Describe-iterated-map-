@@ -33,18 +33,60 @@ g++ main.cpp -lm -Wall
 ./a.out a.txt > a_out.txt
 ```
 
-or if one wants use all input files in the working directory use simply:
+or if one wants use all input files in the working directory use simply:  
 
 ```
 make
-``` 
+```   
 
-# examples
-* see files in [txt directory](./txt): 
+# examples  
+* see files in [txt directory](./txt):   
   * input files: *.txt
   * output files : *_out.txt
 * [cubic Julia set - location by  Roger Lee Bagula](https://commons.wikimedia.org/wiki/File:Cubic_Julia_set_C_%3D-0.040000000000000036-0.78*I_with_internal_level_curves.png)
 * [Critical orbit f(z) = z*z+-0.749413589136570+0.015312826507689*i](https://commons.wikimedia.org/wiki/File:Critical_orbit_f(z)_%3D_z*z%2Bc_and_c%3D-0.749413589136570%2B0.015312826507689*i.png)
+
+
+## isues
+
+In case of multiple roots the numerical algorithm can show 2 roots close to each other.  See [output](./txt/cubic_p2_Bagula_out.txt) of the [cubic_p2_Bagula.txt](./txt/cubic_p2_Bagula.txt):
+
+```txt
+coefficients read from input file cubic_p2_Bagula.txt
+	degree 3 coefficient = ( +1.0000000000000000 +0.0000000000000000*i) 
+	degree 2 coefficient = ( +0.0000000000000000 +0.0000000000000000*i) 
+	degree 1 coefficient = ( +0.0000000000000000 +0.0000000000000000*i) 
+	degree 0 coefficient = ( -0.0400000000000000 -0.7800000000000000*i) 
+
+Input polynomial p(z)=(1+0i)*z^3+(-0.040000000000000035527-0.78000000000000002665i)
+
+derivative dp/dz = (3+0i)*z^2
+
+2 critical points found
+
+cp#0: -2.2351741790771484375e-08,-2.2351741790771484375e-08 . It's critical orbit is bounded and enters cycle #0 length=2 
+      and it's stability = |multiplier|=0.95704 =attractive 
+      internal angle = 0.045777099465243623055
+      cycle = { 0.12845610612214106161,-0.42699144182978676643 ; -0.108141353107358687,-0.7232875185669475071 ; }
+
+cp#1: -2.2351741790771484375e-08,9.4296410679817199707e-09 . It's critical orbit is bounded  and enters cycle #0
+```
+
+one can check using Maxima CAS that there is only one critical point z=0
+```
+%i1) f:z^3+c;
+                                     3
+(%o1)                               z  + c
+(%i2) diff(f,z,1);
+                                        2
+(%o2)                                3 z
+(%i3) solve(3*z^2=0);
+(%o3)                               [z = 0]
+```
+ 
+
+
+
 
 # see also:
 * [program describe ](https://en.wikibooks.org/wiki/Fractals/mandelbrot-numerics#m-describe) from mandelbrot-numerics  library by Claude Heiland-Allen
@@ -85,7 +127,6 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 
 
 # git
-
 
 ```git
 git init
