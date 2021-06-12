@@ -167,6 +167,7 @@ const int32_t MAXFIXORBITLEN=(1 << 16); // max length of a total orbit to some h
 
 
 # see also:
+* [Periodic points of complex quadratic polynomial using Newton method in c](https://gitlab.com/adammajewski/periodic-points-of-complex-quadratic-polynomial-using-newton-method)
 * [program describe ](https://en.wikibooks.org/wiki/Fractals/mandelbrot-numerics#m-describe) from mandelbrot-numerics  library by Claude Heiland-Allen
 * [prm](https://github.com/raboehm/prm) - Find polynomial roots with multiplicities using mpmath by Bob Boehm
 
