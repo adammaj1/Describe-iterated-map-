@@ -47,7 +47,9 @@ make
 * [Critical orbit f(z) = z*z+-0.749413589136570+0.015312826507689*i](https://commons.wikimedia.org/wiki/File:Critical_orbit_f(z)_%3D_z*z%2Bc_and_c%3D-0.749413589136570%2B0.015312826507689*i.png)
 
 
-## isues
+# isues
+
+## multiplicity
 
 In case of multiple roots the numerical algorithm can show 2 roots close to each other.  See [output](./txt/cubic_p2_Bagula_out.txt) of the [cubic_p2_Bagula.txt](./txt/cubic_p2_Bagula.txt):
 
@@ -84,7 +86,20 @@ one can check using Maxima CAS that there is only one critical point z=0
 (%o3)                               [z = 0]
 ```
  
+## maxit
 
+Some cases need a longer iteration. I recommend you change the following two lines in the code:
+
+```cpp
+int32_t maxit=25000;
+```
+
+to some other value - 50000 is working here.
+
+If you want to use a higher maxit than 2^16 you also need to change the memory allocation constant:
+```cpp
+const int32_t MAXFIXORBITLEN=(1 << 16); // max length of a total orbit to some higher value than maxit.
+```
 
 
 
