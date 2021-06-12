@@ -3,6 +3,8 @@
   <a href="https://github.com/adammaj1/Describe-iterated-map-/releases"><img src="https://img.shields.io/github/downloads/adammaj1/Describe-iterated-map-/total?style=flat" alt="Github Release"></a>
 </p>
 
+[![Build status](https://github.com/Anaconda-Platform/anaconda-project/workflows/Build%20and%20test/badge.svg)](https://github.com/Anaconda-Platform/anaconda-project/actions)
+
 
 # numerical periodicity detection
 
@@ -23,13 +25,20 @@ At the end of the orbit computation, I check backwards whether the last iterate 
 
 
 # use 
-Program reads parameters from the input txt file and prints the output data (to the stdout ot the output txt file)
+Program reads parameters from the input txt file and prints the output data (to the stdout or to the output txt file)
 
 
 ```c
 g++ main.cpp -lm -Wall
-./a.out rabbit.txt > rabbit_out.txt
+./a.out a.txt > a_out.txt
 ```
+
+or if one wants use all input files in the working directory use simply:
+
+```
+make
+``` 
+
 # examples
 * see files in [txt directory](./txt): 
   * input files: *.txt
