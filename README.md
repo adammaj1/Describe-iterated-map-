@@ -6,9 +6,9 @@
 [![Build status](https://github.com/Anaconda-Platform/anaconda-project/workflows/Build%20and%20test/badge.svg)](https://github.com/Anaconda-Platform/anaconda-project/actions)
 
 
-# numerical periodicity detection
+# numerical periodicity detection of a polynomial Julia set
 
-determine numerically the cycles of a polynomial Julia set
+determine numerically the cycles 
 
 # algorithm
 
@@ -21,6 +21,18 @@ Then I construct the orbit of those using double precision (or sometimes float12
 
 ## find periods
 At the end of the orbit computation, I check backwards whether the last iterate has already been visited before (squared Euclidean distance of two points below 10^-15) to get the cycle length.
+
+# Rational maps
+
+One can use the code for polynomial cycles to also detect attracting/parabolic ones numerically in the rational case by making some changes:
+* Load 2 polynomials f and g to denote the rational f/g.(routien "loadPolynom")
+* Find the zeros of g (poles) using the "findeNullstellen" .routine.
+* Construct symbolically the derivative as two polynomials (f'*g-g'*f) and (g*g) using "ableitenFA" for the polynomial derivative (I have a polynomial multiplication and addition routine here in case you haven't implemented those yourself)
+* Find the zeros of (f'*g-g'*f) again using "findeNullstellen" (critical points)
+* Construct numerically the orbits of all those values (critical points and poles) to get (attracting) cycles - this needs some work as it's best to implement this anew (from the routien "analysiereJulia"), implementing a check for inf/NaN as a numerical value. If needed,
+evaluating the symbolic derivative polynomials to get the multiplier (function Polynom::eval_arg_f) 
+* Max iteration and epsilon might need to be adjusted as the complex division constitutes another layer of numerical instability.
+
 
 
 
