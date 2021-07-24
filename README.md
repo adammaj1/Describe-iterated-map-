@@ -6,7 +6,7 @@
 [![Build status](https://github.com/Anaconda-Platform/anaconda-project/workflows/Build%20and%20test/badge.svg)](https://github.com/Anaconda-Platform/anaconda-project/actions)
 
 
-# numerical periodicity detection of a polynomial Julia set
+# numerical periodicity detection of a polynomial and rational Julia set
 
 determine numerically the cycles 
 
